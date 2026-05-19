@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import { getNoteBySlug, getAllNotes } from "@/lib/notes";
 import TableOfContents from "@/components/TableOfContents";
 
@@ -74,6 +75,7 @@ export default async function TopicPage({ params }: Props) {
             <div className="prose max-w-none text-gray-700">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeRaw]}
                 components={{
                   h2: ({ children, ...props }) => {
                     const text = extractText(children);

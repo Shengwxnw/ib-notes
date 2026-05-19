@@ -4,14 +4,6 @@ import { syllabus, codeToSlug } from "@/lib/syllabus";
 export default function Home() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
-      <section className="text-center mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-3 tracking-tight text-gray-800">
-          IB Computer Science Notes
-        </h1>
-        <p className="text-gray-500 mb-8 max-w-lg mx-auto">
-          Study notes organised by the official syllabus. Click any topic to view or write notes.
-        </p>
-      </section>
 
       <div className="space-y-10">
         {syllabus.map((theme) => (
