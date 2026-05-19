@@ -16,16 +16,28 @@ export default function Navbar() {
           IB CS Notes
         </Link>
 
-        <Link
-          href="/"
-          className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
-            pathname === "/"
-              ? "bg-gray-100 text-gray-800 font-medium"
-              : "text-gray-600 hover:bg-gray-50 hover:text-gray-800"
-          }`}
-        >
-          Syllabus
-        </Link>
+        <div className="flex items-center gap-1">
+          <Link
+            href="/"
+            className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
+              pathname === "/"
+                ? "bg-gray-100 text-gray-800 font-medium"
+                : "text-gray-600 hover:bg-gray-50 hover:text-gray-800"
+            }`}
+          >
+            Syllabus
+          </Link>
+          <Link
+            href="/resources"
+            className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
+              pathname === "/resources"
+                ? "bg-gray-100 text-gray-800 font-medium"
+                : "text-gray-600 hover:bg-gray-50 hover:text-gray-800"
+            }`}
+          >
+            Resources
+          </Link>
+        </div>
       </div>
     </nav>
   );
