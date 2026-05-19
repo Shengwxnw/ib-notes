@@ -18,8 +18,6 @@ export const metadata: Metadata = {
     template: "%s — IB CS Notes",
     default: "IB Computer Science Notes",
   },
-  description:
-    "Comprehensive IB Computer Science study notes organised by the official syllabus topics.",
 };
 
 export default function RootLayout({
