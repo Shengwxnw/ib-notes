@@ -138,3 +138,42 @@ body {
   border: 0;
   border-top: 1px solid #e5e7eb;
 }
+
+/* Spoiler / details-summary */
+.prose details {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.prose summary {
+  padding: 0.75rem 1rem;
+  background: #f3f4f6;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+}
+
+.prose summary:hover {
+  
+  background: #e5e7eb;
+}
+
+.prose details[open] summary {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.prose details[open] {
+  padding-bottom: 0.75rem;
+}
+
+.prose details[open] > p,
+.prose details[open] > ul,
+.prose details[open] > ol,
+.prose details[open] > pre,
+.prose details[open] > blockquote {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
